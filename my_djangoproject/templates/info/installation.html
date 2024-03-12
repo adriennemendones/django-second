@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1, h3{
+        text-align: center;
+    }
+    .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+</style>
+<body>
+    <h1>Home Assistant: {{title |upper}}</h1>
+    <h2>Installation</h2>
+    <hr>
+    <p>The first step to getting started with Home Assistant is to install it on a device. There are many ways to run it for all kinds of scenarios and all kinds of skill levels.</p>
+
+    <h3>INSTALL HOME ASSISTANT ON ODROID DEVICES</h3>
+    <p style="text-align: center;">A more powerful alternative to Raspberry Pi</p>
+
+    <div class="container">
+        <div class="section">
+            <h4>Skills Required:</h4>
+            <ul>
+                {% for x in skills %}
+                    <li>{{ x }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="section">
+            <h4>Tools Required:</h4>
+            <ul>
+                {% for x in tools %}
+                    <li>{{ x }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

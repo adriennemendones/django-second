@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Home Assistant: {{title|upper}}</h1>
+    <h2>Automating Home Assistant</h2>
+    <p>Home Assistant contains information about all your devices and services
+        . This information is available for the user in the dashboard and it can be used to trigger automations
+        . And that’s fun!<br><br>
+        
+        Automations in Home Assistant allow you to automatically respond to things that happen. You can turn the lights on at sunset or pause the music when you receive a call.
+        
+        If you are just starting out, we recommend that you start with blueprint automations. These are ready-made automations by the community that you only need to configure.</p>
+
+        <h3>LEARN ABOUT AUTOMATION BLUEPRINTS »</h3>
+        <ul>
+            {%for x in skills%}
+                <li>{{x}}</li>
+                {%endfor%}
+        </ul>
+
+</body>
+</html>
